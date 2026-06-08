@@ -50,3 +50,6 @@ php artisan migrate
 
 Acesse o projeto
 [http://localhost:8000](http://localhost:8000)
+
+teste 2026.06.08
+Calossantos
