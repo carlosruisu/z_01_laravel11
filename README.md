@@ -1,12 +1,17 @@
 
-# Setup Docker Laravel 11 com PHP 8.3
+# Setup Docker Laravel 11 com PHP 8.4
 [Assine a Academy, e Seja VIP!](https://academy.especializati.com.br)
 
 ### Passo a passo
-Clone Repositório
+Clone Repositório original
 ```sh
 git clone -b laravel-12-with-php8.4 https://github.com/especializati/setup-docker-laravel.git app-laravel
 ```
+ou
+```sh
+git clone https://github.com/carlosruisu/z_01_laravel11.git  lara
+```
+
 ```sh
 cd app-laravel
 ```
@@ -51,5 +56,9 @@ php artisan migrate
 Acesse o projeto
 [http://localhost:8000](http://localhost:8000)
 
-teste 2026.06.08
+teste 2026.06.15
+
 Calossantos
+https://github.com/carlosruisu
+
+OBS: Falta comando.
