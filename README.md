@@ -32,7 +32,7 @@ ou
 
 Ir ao diretorio
 ```sh
-cd /%UserProfile%/projetos
+cd $HOME/projetos/lara
 ```
 
 Iniar o Code
@@ -128,8 +128,7 @@ Git push
 git push
 ```
 
-Carlossantos
-http://github.com/carlosruisu
-http://github.com/carlosruisu/z_01_laravel11
+Carlossantos: http://github.com/carlosruisu
+Carlossantos Projetos: http://github.com/carlosruisu/z_01_laravel11
 
 teste 2026.06.15
