@@ -13,24 +13,39 @@ Executar
 win + r
 ```
 
-PowerShell
+Iniciar o PowerShell
 ```sh
-poweshell.exe
+powershell.exe
 ```
 
-wsl
+```sh
+wsl --install -d Ubuntu
+```
+
+```sh
+wsl --install -d Debian
+```
+
+```sh
+wsl.exe --distribution Ubuntu
+```
+
+```sh
+wsl.exe --distribution Debian
+```
+
+iniciar o wsl:
 ```sh
 wsl
 ```
 
-Ir ao diretorio
+Ir ao diretório:
 ```sh
 cd /home/sansa/projetos/lara
 ```
 
 ou
 
-Ir ao diretorio
 ```sh
 cd $HOME/projetos/lara
 ```
