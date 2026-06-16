@@ -113,14 +113,17 @@ wsl --terminate Ubuntu
 
 ### Git
 
+Git stash
 ```sh
 git add .
 ```
 
+Git commit
 ```sh
-git commit -m
+git commit -m "2026.06.15 G"
 ```
 
+Git push
 ```sh
 git push
 ```
