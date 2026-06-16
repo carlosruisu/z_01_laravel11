@@ -1,11 +1,7 @@
 
 ## Setup Linux, Docker, Docker Compose, Laravel 11 com PHP 8.4 
 
-Clone Repositório original [Academy](http://academy.especializati.com.br)
-```sh
-git clone -b laravel-12-with-php8.4 https://github.com/especializati/setup-docker-laravel.git app-laravel
-```
-
+Para WSL com Linux, no wiindows
 
 ### Passo a passo:
 
@@ -20,17 +16,17 @@ powershell.exe
 
 ### Depois de instalat o WSL, Instalar linux no wsl
 
-Installar o Ubuntu:
+Instalar o Ubuntu:
 ```sh
 wsl --install -d Ubuntu
 ```
 
-Installar o Ubuntu-22.04:
+Instalar o Ubuntu-22.04:
 ```sh
 wsl --install -d Ubuntu-22.04
 ```
 
-Installar o Ubuntu-26.04:
+Instalar o Ubuntu-26.04:
 ```sh
 wsl --install -d Ubuntu-26.04
 ```
@@ -101,25 +97,30 @@ Iniar o Code:
 code .
 ```
 
-Yes, Trust (in VS Code / VS Codium)
+## in VS Code / VS Codium
+- Yes, Trust
 
 Crie o Arquivo .env - copie o arquivo
 ```sh
 cp .env.example .env
 ```
 
+Atualize o Linux
 ```sh
 sudo apt update
 ```
 
+Instale o NPM
 ```sh
 sudo apt install npm
 ```
 
+Atualize o Linux-Utils-Extra
 ```sh
 sudo apt install util-linux-extra
 ```
 
+Instale os certificados do Docker
 ```sh
 # Add Docker's official GPG key:
 sudo apt update
@@ -141,45 +142,61 @@ EOF
 sudo apt update
 ```
 
+Coloque as permissões do docker
 ```sh
 sudo chmod a+r /etc/apt/keyrings/docker.asc
 ```
 
+Atualize o Docker
 ```sh
 sudo apt update
 sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
 
+Adicione o grupo Docker
 ```sh
 sudo groupadd docker
 ```
 
+Adicione o usuário ao grupo Docker
 ```sh
 sudo usermod -aG docker $USER
 ```
 
+Atualize o grupo Docker
 ```sh
 newgrp docker
 ```
 
+Habilite o Docker
 ```sh
 sudo systemctl enable docker
 ```
 
+Inicie o Docker
 ```sh
 sudo systemctl start docker
 ```
 
+Verifique a versão do Docker
 ```sh
 docker --version
 ```
 
+Verifique o status do Docker
 ```sh
 sudo systemctl status docker
 ```
 
-ctrl+c / ESC
+Para sair do status
+- ctrl+c / ESC
 
+Teste do docker
+```sh
+docker run hello-world   
+```
+
+Verifique a versão do compose
 ```sh
 docker compose version
 ```
@@ -189,7 +206,7 @@ Na primeira vez
 docker compose up -d --build
 ```
 
-Para iniciar
+Para iniciar o docker compose
 ```sh
 docker compose up -d
 ```
@@ -297,8 +314,14 @@ Git fetch
 git fecth
 ```
 
+## Sobre o projeto
 
-Carlossantos
+Clone Repositório original [Academy](http://academy.especializati.com.br)
+```sh
+git clone -b laravel-12-with-php8.4 https://github.com/especializati/setup-docker-laravel.git app-laravel
+```
+
+Atualixador por Carlossantos
 - http://github.com/carlosruisu
 
 Carlossantos Projeto
