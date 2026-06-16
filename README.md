@@ -28,8 +28,9 @@ Installar o Ubuntu-22.04:
 wsl --install -d Ubuntu-22.04
 ```
 
-User: Sansa
-Pass: 01
+### Preencher no sistema
+- User
+- Pass
 
 iniciar o wsl (default): 
 ```sh
