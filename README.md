@@ -1,6 +1,11 @@
 
 # Setup Docker Laravel 11 com PHP 8.4 
 
+Clone Repositório original [Assine a Academy](http://academy.especializati.com.br)
+```sh
+git clone -b laravel-12-with-php8.4 https://github.com/especializati/setup-docker-laravel.git app-laravel
+```
+
 ### Passo a passo:
 
 Executar
@@ -20,7 +25,7 @@ wsl
 
 Ir ao diretorio
 ```sh
-cd /home/sansa/projetos
+cd /home/sansa/projetos/lara
 ```
 
 ou
@@ -30,12 +35,10 @@ Ir ao diretorio
 cd /%UserProfile%/projetos
 ```
 
-Clone Repositório original [Assine a Academy](http://academy.especializati.com.br)
+Iniar o Code
 ```sh
-git clone -b laravel-12-with-php8.4 https://github.com/especializati/setup-docker-laravel.git app-laravel
+code .
 ```
-
-ou
 
 ```sh
 git clone https://github.com/carlosruisu/z_01_laravel11.git  lara
@@ -106,6 +109,20 @@ wsl -l -v
 WSL encerrar
 ```sh
 wsl --terminate Ubuntu
+```
+
+### Git
+
+```sh
+git add .
+```
+
+```sh
+git commit -m
+```
+
+```sh
+git push
 ```
 
 Carlossantos
