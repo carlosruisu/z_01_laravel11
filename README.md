@@ -3,7 +3,34 @@
 
 ### Passo a passo:
 
-Clone Repositório original [Assine a Academy, e Seja VIP!](https://academy.especializati.com.br)
+Executar
+```sh
+win + r
+```
+
+PowerShell
+```sh
+poweshell.exe
+```
+
+wsl
+```sh
+wsl
+```
+
+Ir ao diretorio
+```sh
+cd /home/sansa/projetos
+```
+
+ou
+
+Ir ao diretorio
+```sh
+cd /%userpro9file%/projetos
+```
+
+Clone Repositório original [Assine a Academy](http://academy.especializati.com.br)
 ```sh
 git clone -b laravel-12-with-php8.4 https://github.com/especializati/setup-docker-laravel.git app-laravel
 ```
