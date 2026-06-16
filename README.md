@@ -27,7 +27,7 @@ ou
 
 Ir ao diretorio
 ```sh
-cd /%userpro9file%/projetos
+cd /%UserProfile%/projetos
 ```
 
 Clone Repositório original [Assine a Academy](http://academy.especializati.com.br)
@@ -109,6 +109,7 @@ wsl --terminate Ubuntu
 ```
 
 Carlossantos
-https://github.com/carlosruisu
+http://github.com/carlosruisu
+http://github.com/carlosruisu/z_01_laravel11
 
 teste 2026.06.15
