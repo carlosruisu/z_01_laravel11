@@ -149,14 +149,14 @@ wsl --terminate Ubuntu-22.04
 
 ### Git
 
-Git stash
+Git add
 ```sh
 git add .
 ```
 
 Git commit
 ```sh
-git commit -m "2026.06.15 G"
+git commit -m "2026.06.16 b"
 ```
 
 Git push
@@ -181,7 +181,9 @@ Git fetch
 git fecth
 ```
 
-Carlossantos: http://github.com/carlosruisu
-Carlossantos Projetos: http://github.com/carlosruisu/z_01_laravel11
+Carlossantos
+- http://github.com/carlosruisu
+Carlossantos Projeto
+- http://github.com/carlosruisu/z_01_laravel11
 
 teste 2026.06.15
