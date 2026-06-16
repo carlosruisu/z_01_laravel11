@@ -1,13 +1,14 @@
 
-# Setup Docker Laravel 11 com PHP 8.4
-[Assine a Academy, e Seja VIP!](https://academy.especializati.com.br)
+# Setup Docker Laravel 11 com PHP 8.4 [Assine a Academy, e Seja VIP!](https://academy.especializati.com.br)
 
-### Passo a passo
+### Passo a passo:
 Clone Repositório original
 ```sh
 git clone -b laravel-12-with-php8.4 https://github.com/especializati/setup-docker-laravel.git app-laravel
 ```
+
 ou
+
 ```sh
 git clone https://github.com/carlosruisu/z_01_laravel11.git  lara
 ```
@@ -16,22 +17,20 @@ git clone https://github.com/carlosruisu/z_01_laravel11.git  lara
 cd app-laravel
 ```
 
-Suba os containers do projeto
-```sh
-docker-compose up -d
-```
-
-
 Crie o Arquivo .env
 ```sh
 cp .env.example .env
+```
+
+Suba os containers do projeto
+```sh
+docker compose up -d
 ```
 
 Acesse o container app
 ```sh
 docker-compose exec app bash
 ```
-
 
 Instale as dependências do projeto
 ```sh
@@ -58,7 +57,7 @@ Acesse o projeto
 
 teste 2026.06.15
 
-Calossantos
+Carlossantos
 https://github.com/carlosruisu
 
 OBS: Falta comando.
