@@ -93,6 +93,21 @@ php artisan migrate
 Acesse o projeto
 [http://localhost:8000](http://localhost:8000)
 
+Sair
+```sh
+exit
+```
+
+WSL verificar
+```sh
+wsl -l -v
+```
+
+WSL encerrar
+```sh
+wsl --terminate Ubuntu
+```
+
 Carlossantos
 https://github.com/carlosruisu
 
