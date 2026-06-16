@@ -1,7 +1,7 @@
 
 # Setup Docker Laravel 11 com PHP 8.4 
 
-Clone Repositório original [Assine a Academy](http://academy.especializati.com.br)
+Clone Repositório original [Academy](http://academy.especializati.com.br)
 ```sh
 git clone -b laravel-12-with-php8.4 https://github.com/especializati/setup-docker-laravel.git app-laravel
 ```
@@ -126,6 +126,23 @@ git commit -m "2026.06.15 G"
 Git push
 ```sh
 git push
+```
+
+### Outros git
+
+Git checkout
+```sh
+git checkout main
+```
+
+Git pull
+```sh
+git pull
+```
+
+Git fetch
+```sh
+git fecth
 ```
 
 Carlossantos: http://github.com/carlosruisu
