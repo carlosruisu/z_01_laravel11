@@ -8,42 +8,62 @@ git clone -b laravel-12-with-php8.4 https://github.com/especializati/setup-docke
 
 ### Passo a passo:
 
-Executar
+Executar:
 ```sh
 win + r
 ```
 
-Iniciar o PowerShell
+Iniciar o PowerShell:
 ```sh
 powershell.exe
 ```
+
+Installar o Ubuntu:
+```sh
+wsl --install -d Ubuntu
+```
+
+Installar o Ubuntu-22.04:
+```sh
+wsl --install -d Ubuntu-22.04
+```
+
+User: Sansa
+Pass: 01
 
 iniciar o wsl (default): 
 ```sh
 wsl
 ```
 
-Installar o Ubuntu
-```sh
-wsl --install -d Ubuntu
-```
-
-Installar o Ubuntu-22.04
-```sh
-wsl --install -d Ubuntu-22.04
-```
-
-Iniciar Ubuntu
+Iniciar Ubuntu:
 ```sh
 wsl.exe --distribution Ubuntu
 ```
 
-Iniciar Ubuntu-22.04
+Iniciar Ubuntu-22.04:
 ```sh
 wsl.exe --distribution Ubuntu-22.04
 ```
 
-Ir ao diretório:
+```sh
+cd $HOME
+```
+
+```sh
+mkdir projetos
+```
+
+Clone de repositório:
+```sh
+git clone https://github.com/carlosruisu/z_01_laravel11.git  lara
+```
+
+```sh
+cd lara
+```
+
+Ir ao diretório direto:
 ```sh
 cd /home/sansa/projetos/lara
 ```
@@ -54,17 +74,9 @@ ou
 cd $HOME/projetos/lara
 ```
 
-Iniar o Code
+Iniar o Code:
 ```sh
 code .
-```
-
-```sh
-git clone https://github.com/carlosruisu/z_01_laravel11.git  lara
-```
-
-```sh
-cd lara
 ```
 
 Crie o Arquivo .env - copie o arquivo
