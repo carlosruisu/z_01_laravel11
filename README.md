@@ -18,25 +18,29 @@ Iniciar o PowerShell
 powershell.exe
 ```
 
+iniciar o wsl (default): 
+```sh
+wsl
+```
+
+Installar o Ubuntu
 ```sh
 wsl --install -d Ubuntu
 ```
 
+Installar o Ubuntu-22.04
 ```sh
-wsl --install -d Debian
+wsl --install -d Ubuntu-22.04
 ```
 
+Iniciar Ubuntu
 ```sh
 wsl.exe --distribution Ubuntu
 ```
 
+Iniciar Ubuntu-22.04
 ```sh
-wsl.exe --distribution Debian
-```
-
-iniciar o wsl:
-```sh
-wsl
+wsl.exe --distribution Ubuntu-22.04
 ```
 
 Ir ao diretório:
@@ -124,6 +128,10 @@ wsl -l -v
 WSL encerrar
 ```sh
 wsl --terminate Ubuntu
+```
+
+```sh
+wsl --terminate Ubuntu-22.04
 ```
 
 ### Git
