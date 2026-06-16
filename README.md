@@ -1,5 +1,5 @@
 
-# Setup Docker Laravel 11 com PHP 8.4 
+## Setup Docker Laravel 11 com PHP 8.4 
 
 Clone Repositório original [Academy](http://academy.especializati.com.br)
 ```sh
@@ -9,9 +9,7 @@ git clone -b laravel-12-with-php8.4 https://github.com/especializati/setup-docke
 ### Passo a passo:
 
 Executar:
-```sh
-win + r
-```
+- win + r
 
 Iniciar o PowerShell:
 ```sh
@@ -183,7 +181,8 @@ git fecth
 
 Carlossantos
 - http://github.com/carlosruisu
+
 Carlossantos Projeto
 - http://github.com/carlosruisu/z_01_laravel11
 
-teste 2026.06.15
+teste 2026.06.16
