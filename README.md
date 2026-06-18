@@ -110,9 +110,14 @@ Atualize o Linux
 sudo apt update
 ```
 
-Instale o NPM
+Instale o NPM - Instale as dependências do projeto (NodeJs)
 ```sh
 sudo apt install npm
+```
+
+Buildar os assets
+```sh
+npm run build
 ```
 
 Atualize o Linux-Utils-Extra
@@ -216,9 +221,23 @@ Verifique os containers do projeto funcinando - E em quais portas
 docker ps
 ```
 
-Acesse o container app
+Acesse o container app 0
 ```sh
 docker compose exec app bash
+```
+
+Or
+
+Acesse o container app 1
+```sh
+docker compose exec -it app bash
+```
+
+docker exec app bash
+docker exec -it app bash
+
+```sh
+composer install
 ```
 
 Gere a key do projeto Laravel
@@ -226,28 +245,90 @@ Gere a key do projeto Laravel
 php artisan key:generate
 ```
 
-OPCIONAL: Gere o banco SQLite (caso não use o banco MySQL)
+OPCIONAL 0: Gere o banco SQLite (caso não use o banco MySQL)
 ```sh
 touch database/database.sqlite
 ```
 
-Rodar as migrations
+OPCIONAL 1: Caso use mysql edite o aquivo .env na parte de db
+```sh
+DB_CONNECTION=mysql
+DB_HOST=db
+DB_PORT=3306
+DB_DATABASE=laravel
+DB_USERNAME=username
+DB_PASSWORD=userpass
+```
+
+Rodar as migrations - Gerar as tabelas do banco de dados
 ```sh
 php artisan migrate
 ```
 
-OBS: Falta comando.
+## instalar breeze
 ```sh
-php artisan migrate
+composer require laravel/breeze --dev
 ```
 
-Acesse o projeto
-[http://localhost:8000](http://localhost:8000)
+## instalar autenticação breeze
+```sh
+php artisan breeze:install
+```
 
-Sair
+# Example: Install Blade stack with dark mode and Pest testing
+php artisan breeze:install blade --dark --pest
+
+php artisan breeze:install blade --dark --pest --no-interaction
+
+php artisan breeze:install --no-interaction
+
+1st
+1st
+pest
+
+*sem pest
+
+Para sair do container
 ```sh
 exit
 ```
+
+Temporario (Fora do container, no console)
+```sh
+npm run dev
+```
+
+Para fazer a build (Fora do container, no console)
+```sh
+npm  run build
+```
+
+php_po_parecido com java _ array redutor
+
+Teste
+```sh
+php artisan test
+```
+
+## Acesse o projeto
+App
+[http://localhost:8000](http://localhost:8000)
+
+Acesse o phpMyAdmin
+[http://localhost:8080](http://localhost:8080)
+
+User (exemplo)
+```sh
+username
+```
+
+Pass (exemplo)
+```sh
+userpass
+```
+
+
+## WSL
 
 WSL verificar
 ```sh
@@ -314,14 +395,32 @@ Git fetch
 git fecth
 ```
 
+## Ex
+
+Gerar link simbólico
+```sh
+php artisan storage:link
+```
+
+php clean
+```sh
+php artisan optimize:clear
+```
+
+
 ## Sobre o projeto
+Playlist do youtube
+- https://www.youtube.com/watch?v=80JFKFFIWmM&list=PLVSNL1PHDWvThyUgAgJoulpg5kB7GpYqS
+
+Partes importantes
+*v4__18:10_nginx_docker/ngimx/laravel.conf
 
 Clone Repositório original [Academy](http://academy.especializati.com.br)
 ```sh
 git clone -b laravel-12-with-php8.4 https://github.com/especializati/setup-docker-laravel.git app-laravel
 ```
 
-Atualixador por Carlossantos
+Atualizador po Carlossantos
 - http://github.com/carlosruisu
 
 Carlossantos Projeto
