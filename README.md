@@ -158,7 +158,7 @@ sudo apt update
 sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
 
-Adicione o grupo Docker
+Opcional (Adicione o grupo Docker)
 ```sh
 sudo groupadd docker
 ```
@@ -238,6 +238,11 @@ docker exec -it app bash
 
 ```sh
 composer install
+```
+
+pestphp
+```sh
+composer require pestphp/pest --dev --with-all-dependencies
 ```
 
 Gere a key do projeto Laravel
