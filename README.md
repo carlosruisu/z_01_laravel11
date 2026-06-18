@@ -13,8 +13,7 @@ Iniciar o PowerShell:
 powershell.exe
 ```
 
-
-### Depois de instalat o WSL, Instalar linux no wsl
+#### Instalação (Depois de instalat o WSL, Instalar linux no wsl)
 
 Instalar o Ubuntu:
 ```sh
@@ -31,30 +30,9 @@ Instalar o Ubuntu-26.04:
 wsl --install -d Ubuntu-26.04
 ```
 
-
-### Preencher no sistema
+#### Preencher no sistema
 - User
 - Pass
-
-iniciar o wsl (default): 
-```sh
-wsl
-```
-
-Iniciar Ubuntu:
-```sh
-wsl.exe --distribution Ubuntu
-```
-
-Iniciar Ubuntu-22.04:
-```sh
-wsl.exe --distribution Ubuntu-22.04
-```
-
-Iniciar Ubuntu-26.04:
-```sh
-wsl.exe --distribution Ubuntu-26.04
-```
 
 Diretório do usuário
 ```sh
@@ -81,7 +59,29 @@ Mudar para a pasta lara
 cd lara
 ```
 
-## Diretório lara (diretório direto, previamente criado):
+
+
+iniciar o wsl (default): 
+```sh
+wsl
+```
+
+Iniciar Ubuntu:
+```sh
+wsl.exe --distribution Ubuntu
+```
+
+Iniciar Ubuntu-22.04:
+```sh
+wsl.exe --distribution Ubuntu-22.04
+```
+
+Iniciar Ubuntu-26.04:
+```sh
+wsl.exe --distribution Ubuntu-26.04
+```
+
+### Diretório lara (diretório direto, previamente criado):
 ```sh
 cd /home/sansa/projetos/lara
 ```
@@ -92,12 +92,15 @@ ou
 cd $HOME/projetos/lara
 ```
 
-Iniar o Code:
+
+
+### in VS Code / VS Codium
+
+Inciar o Code:
 ```sh
 code .
 ```
 
-## in VS Code / VS Codium
 - Yes, Trust
 
 Crie o Arquivo .env - copie o arquivo
@@ -158,11 +161,6 @@ sudo apt update
 sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
 
-Opcional (Adicione o grupo Docker)
-```sh
-sudo groupadd docker
-```
-
 Adicione o usuário ao grupo Docker
 ```sh
 sudo usermod -aG docker $USER
@@ -188,25 +186,12 @@ Verifique a versão do Docker
 docker --version
 ```
 
-Verifique o status do Docker
-```sh
-sudo systemctl status docker
-```
-
-Para sair do status
-- ctrl+c / ESC
-
-Teste do docker
-```sh
-docker run hello-world   
-```
-
 Verifique a versão do compose
 ```sh
 docker compose version
 ```
 
-Na primeira vez
+Para iniciar o docker compose (na primeira vez)
 ```sh
 docker compose up -d --build
 ```
@@ -216,33 +201,25 @@ Para iniciar o docker compose
 docker compose up -d
 ```
 
-Verifique os containers do projeto funcinando - E em quais portas
+Verifique os containers do projeto funcinando (e em quais portas)
 ```sh
 docker ps
 ```
 
-Acesse o container app 0
+Acesse o container (app v1)
 ```sh
 docker compose exec app bash
 ```
 
 Or
 
-Acesse o container app 1
+Acesse o container (app v2)
 ```sh
 docker compose exec -it app bash
 ```
 
-docker exec app bash
-docker exec -it app bash
-
 ```sh
 composer install
-```
-
-pestphp
-```sh
-composer require pestphp/pest --dev --with-all-dependencies
 ```
 
 Gere a key do projeto Laravel
@@ -265,6 +242,11 @@ DB_USERNAME=username
 DB_PASSWORD=userpass
 ```
 
+OPCIONAL 2: Caso use .env salvo
+```sh
+sudo chmod 777 .env
+```
+
 Rodar as migrations - Gerar as tabelas do banco de dados
 ```sh
 php artisan migrate
@@ -275,23 +257,24 @@ php artisan migrate
 composer require laravel/breeze --dev
 ```
 
+pestphp
+```sh
+composer require pestphp/pest --dev --with-all-dependencies
+```
+
 ## instalar autenticação breeze
 ```sh
 php artisan breeze:install
 ```
 
-# Example: Install Blade stack with dark mode and Pest testing
-php artisan breeze:install blade --dark --pest
-
-php artisan breeze:install blade --dark --pest --no-interaction
-
-php artisan breeze:install --no-interaction
-
 1st
 1st
 pest
 
-*sem pest
+## instalar autenticação breeze (blade, dark, pest)
+```sh
+php artisan breeze:install blade --dark --pest
+```
 
 Para sair do container
 ```sh
@@ -431,4 +414,4 @@ Atualizador po Carlossantos
 Carlossantos Projeto
 - http://github.com/carlosruisu/z_01_laravel11
 
-teste 2026.06.16
+teste 2026.06.18
